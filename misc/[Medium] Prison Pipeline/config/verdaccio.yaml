@@ -1,0 +1,52 @@
+storage: ./storage
+
+plugins: ./plugins
+
+web:
+  title: Prison-Pipeline Registry
+  gravatar: false
+  darkMode: true
+  login: false
+  showInfo: true
+  showSettings: false
+
+auth:
+  htpasswd:
+    file: ./htpasswd
+    max_users: -1 # disable user registration
+
+
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+
+
+packages:
+  'prisoner-*':
+    # scoped packages
+    access: $all
+    publish: $authenticated
+    # don't query external registry
+    # proxy: npmjs
+
+  '@*/*':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+
+  '**':
+    access: $all
+    publish: $authenticated
+    proxy: npmjs
+
+
+server:
+  keepAliveTimeout: 60
+
+
+middlewares:
+  audit:
+    enabled: true
+
+
+log: { type: stdout, format: pretty, level: info }

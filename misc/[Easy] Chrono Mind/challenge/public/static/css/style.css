@@ -1,0 +1,53 @@
+body {
+    background: #141627;
+}
+
+.headline {
+    font-size: 4vw;
+    font-weight: bold;
+}
+.fancy-colors {
+    display: inline-block;
+    white-space: nowrap;
+    background: -webkit-linear-gradient(0deg, #389FFF 0%, #5F6EEA 50%, #7E46DA 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.url-box, .url-box:focus {
+    background-color: #0B223E;
+    border-color: #3e97fc;
+}
+
+.input-group button {
+    border-color: #3e97fc;
+}
+
+.text-muted-2 {
+    color: #78768b;
+    font-size: 13px;
+    padding-top: 2px;
+}
+
+.push-up {
+    height: 25vh;
+}
+
+
+#resp-msg {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .headline {
+        font-size: 6vw;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: 10vw;
+    }
+}

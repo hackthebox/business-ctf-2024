@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+<div id="loadingSection" class="loading-container">
+	<img class="loading-img" src="/controller/static/img/icon.png">
+</div>
+<div class="container">
+	<div class="row mt-5 pt-3">
+		<div class="cyber-tile-big fg-white bg-dark-purple">
+			{% if devices|length < 1 %}
+				<span class="blenderpro-font">No devices found</span>
+			{% else %}
+				<h3 class="cyber-h ac-cyan blenderpro-font">Tracking Devices</h3>
+				<table class="cyber-table cyber-style-2 ac-cyan blenderpro-font">
+					<thead>
+						<tr>
+							<th>Id.</th>
+							<th>Name</th>
+							<th>Manufacturer</th>
+							<th>Type</th>
+							<th>Battery Level</th>
+							<th>Encryption</th>
+							<th>Communication Protocol</th>
+							<th>Firmware Version</th>
+							<th>Activation Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for device in devices %}
+							<tr>
+								<th><a href="/controller/device/{{ device['device_id'] }}">{{ device["device_id"] }}</a></th>
+								<th>{{ device["device_name"] }}</th>
+								<th>{{ device["manufacturer"] }}</th>
+								<th>{{ device["tracking_type"] }}</th>
+								<th>{{ device["battery_level"] }}</th>
+								<th>{{ device["encryption_level"] }}</th>
+								<th>{{ device["communication_protocol"] }}</th>
+								<th>{{ device["firmware_version"] }}</th>
+								<th>{{ device["activation_status"] }}</th>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			{% endif %}
+		</div>
+	</div>
+</div>
+<script src="/controller/static/js/main.js"></script>
+
+{% endblock %}

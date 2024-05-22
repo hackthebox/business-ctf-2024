@@ -1,0 +1,52 @@
+body {
+    background-image: none ;
+    background-color: transparent;
+}
+
+.pixel {
+    width: 16px;
+    height: 16px;
+  }
+
+.sprite-row {
+    position: relative;
+    height: 165px;
+    width: 165px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+#profile-pic * {
+    background: yellow;
+}
+
+.secret-content {
+    margin: auto;
+    margin-top: 15px;
+    height: 375px;
+    width: 500px;
+    background: white;
+    color: #535252;
+    font-size:20px;
+}
+
+.secret-content:focus {
+    background: white;
+    color: #535252;
+}
+
+.input-row {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#resp-msg, #avatar-resp {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    min-width: 400px;
+    max-width: 400px;
+    display: none;
+}

@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+<div id="loadingSection" class="loading-container">
+	<img class="loading-img" src="/controller/static/img/icon.png">
+</div>
+<div class="container">
+	<div class="row mt-5 pt-3">
+		<div class="cyber-tile-big fg-white bg-dark-purple">
+            <h3 class="cyber-h ac-cyan blenderpro-font">Update firmware</h3>
+            <form action="/controller/firmware" method="POST">
+                <div class="cyber-select-long ac-purple">
+                    <select name="patch">
+                        {% for patch in patches %}
+                            <option value="{{patch}}">{{ patch }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="cyber-button-small bg-purple fg-white mt-3">Preview</button>
+            </form>
+		</div>
+	</div>
+</div>
+<script src="/controller/static/js/main.js"></script>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+HTB{#rule_of_thumb___do_not_roll_your_own_hash_based_message_authentication_codes___#}

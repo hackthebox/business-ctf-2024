@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIP-OS(R) V1.33.7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/pipboy.app.css">
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inventory">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">DATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/radio">RADIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rom">ROM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <span class="playlist-text">PLAYLIST</span>
+    <span class="playlist-background"></span>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-radio text-center">
+                <ul class="list-group">
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(0)">A WONDERFUL GUY</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(1)">ACCENTUATE THE POSITIVE</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(2)">ANYTHING GOES</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(3)">ATOM BOMB BABY</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(4)">BUTCHER PETE</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(5)">CRAZY HE CALLS ME</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(6)">CIVILIZATION</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(7)">END OF THE WORLD</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(8)">THE WANDERER</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                        <span> <img src="/static/music/play button.png"> </span>
+                        <a href="#" onclick="loadSong(9)">URANIUM FEVER</a>
+                    </li>
+                    <li class="list-group-item text-left">
+                      <span> <img src="/static/music/play button.png"> </span>
+                      <a href="#" onclick="loadSong(10)">A KISS TO BUILD A DREAM ON</a>
+                  </li>
+                  <li class="list-group-item text-left">
+                    <span> <img src="/static/music/play button.png"> </span>
+                    <a href="#" onclick="loadSong(11)">AIN'T THAT A KICK IN THE HEAD</a>
+                  </li>
+                  <li class="list-group-item text-left">
+                    <span> <img src="/static/music/play button.png"> </span>
+                    <a href="#" onclick="loadSong(12)">BIG IRON</a>
+                  </li>
+                  <li class="list-group-item text-left">
+                    <span> <img src="/static/music/play button.png"> </span>
+                     <a href="#" onclick="loadSong(13)">ROCKET 69</a>
+                 </li>
+                 <li class="list-group-item text-left">
+                  <span> <img src="/static/music/play button.png"> </span>
+                  <a href="#" onclick="loadSong(14)">TAKE ME HOME, COUNTRY ROADS</a>
+              </li>
+                </ul>
+            </div>
+            <div class="col text-center">
+                <div class="audio-player-container">
+                    <div class="player">
+                        <img src="/static/music/shuffle.png" onclick="shuffle();">
+                        <img src="/static/music/previous song.png" onclick="previous();">
+                        <img id="play-pause-check" src="/static/music/play button.png" onclick="playPause(this);">
+                        <img src="/static/music/next song.png" onclick="next();">
+                        <img src="/static/music/replay.png" onclick="replay();">
+                    </div>
+                    <div class="player slider">
+                        <img src="/static/music/mute.png" onclick="mute(this);">
+                        <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()">
+                    </div>
+                </div>
+                <div>
+                    <div class="wave">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <navbar class="navbar-light pip-footer pip-footer-radio">
+      
+    </navbar>
+
+    <script src="/static/js/jquery-2.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/radio.js"></script>
+  </body>
+</html>

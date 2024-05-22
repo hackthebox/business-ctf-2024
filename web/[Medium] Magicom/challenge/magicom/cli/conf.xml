@@ -1,0 +1,5 @@
+<config>
+<db name="username" value="root"/>
+<db name="password" value="root"/>
+<db name="database" value=""/>
+</config>

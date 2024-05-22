@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIP-OS(R) V1.33.7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/pipboy.app.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inventory">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">DATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/radio">RADIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rom">ROM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li style="opacity: 1 !important;" class="nav-item">
+              <a href="#status" onclick="showStatus()" class="nav-link" data-toggle="tab">
+                STATUS
+              </a>
+            </li>
+            <li style="opacity: 1 !important;" class="nav-item">
+              <a href="#special" onclick="showSpecial()" class="nav-link" data-toggle="tab">
+                SPECIAL
+              </a>
+            </li>
+            <li style="opacity: 1 !important;" class="nav-item">
+              <a href="#perks" onclick="showPerks()" class="nav-link" data-toggle="tab">
+                PERKS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="status" role="tabpanel">
+              <div class="center-image">
+                  <img src="/static/images/vault_boy_walking.gif">
+              </div>
+              <div class="stat-bar-container">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="stat-bar">
+                              <div class="level-progress">
+                                  <div class="level-progress-indicator w10"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-3">
+                          <div class="stat-bar">
+                              <div class="level-progress">
+                                  <div class="level-progress-indicator w70"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-6"></div>
+                      <div class="col-3">
+                          <div class="stat-bar">
+                              <div class="level-progress">
+                                  <div class="level-progress-indicator w40"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-3">
+                          <div class="stat-bar">
+                              <div class="level-progress">
+                                  <div class="level-progress-indicator w30"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-6"></div>
+                      <div class="col-3">
+                          <div class="stat-bar">
+                              <div class="level-progress">
+                                  <div class="level-progress-indicator w20"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="stat-bar">
+                              <div class="level-progress">
+                                  <div class="level-progress-indicator w50"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row stat-numbers">
+                  <div class="spacer-numbers"></div>
+                  <div class="col-2">
+                      <img src="/static/images/gun.png" class="img-responsive">
+                  </div>
+                  <div class="col-1">
+                      <div class="icon">
+                          <img src="/static/images/crosshair.png" class="img-responsive">
+                      </div>
+                      <div class="points-crosshair">
+                          18
+                      </div>
+                  </div>
+                  <div class="col-1 transparent"></div>
+                  <div class="col-2">
+                      <img src="/static/images/helmet.png" class="img-responsive helmet">
+                  </div>
+                  <div class="col-1">
+                      <div class="icon">
+                          <img src="/static/images/flash.png" class="img-responsive">
+                      </div>
+                      <div class="points-flash">
+                          5
+                      </div>
+                  </div>
+                  <div class="col-1">
+                      <div class="icon">
+                          <img src="/static/images/radiation.png" class="img-responsive radiation">
+                      </div>
+                      <div class="points-radiation">
+                          10
+                      </div>
+                  </div>
+                  <div class="col-2 transparent"></div>
+              </div>
+              <div class="username">
+                  <span>BUNNY</span>
+              </div>
+          </div>
+          <div class="tab-pane fade show" id="special" role="tabpanel">
+              Special inside
+          </div>
+          <div class="tab-pane fade show" id="perks" role="tabpanel">
+              Perks inside
+          </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <navbar class="navbar-light pip-footer">
+      <div class="row">
+        <div class="col-3">
+          HP 230/250
+        </div>
+        <div class="col-6 text-center">
+          <span>LEVEL 32</span>
+          <div class="level-progress">
+            <div class="level-progress-indicator"></div>
+          </div>
+        </div>
+        <div class="col-3 text-right">
+          AP 170/170
+        </div>
+      </div>
+    </navbar>
+
+    
+    <script src="/static/js/jquery-2.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+   
+    <script>
+      const showSpecial = () => {
+    var showHTML = `
+    <section class="core-display core-display-active" id="stat-special-section">
+        <div class="menu-container special-container">
+            <div class="menu-attributes special-attributes">
+                <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-strength">
+                    <p class="menu-attribute special-attribute">Strength</p>
+                    <p class="special-value">2</p>
+                </div>
+                <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-perception">
+                    <p class="menu-attribute special-attribute">Perception</p>
+                    <p class="special-value">8</p>
+                </div>
+                <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-endurance">
+                    <p class="menu-attribute special-attribute">Endurance</p>
+                    <p class="special-value">7</p>
+                </div>
+                <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-charisma">
+                    <p class="menu-attribute special-attribute">Charisma</p>
+                    <p class="special-value">3</p>
+                </div>
+                <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-intelligence">
+                    <p class="menu-attribute special-attribute">Intelligence</p>
+                    <p class="special-value">9</p>
+                </div>
+                <div class="menu-attribute-box special-attribute-box" id="special-attribute-box-agility">
+                    <p class="menu-attribute special-attribute">Agility</p>
+                    <p class="special-value">4</p>
+                </div>
+                <div class="menu-attribute-box special-attribute-box special-attribute-box-active" id="special-attribute-box-luck">
+                    <p class="menu-attribute special-attribute">Luck</p>
+                    <p class="special-value">10</p>
+                </div>
+            </div>
+            <div class="menu-right-column special-right-column">
+                <!-- images --------------------------------------------------------------------------------------------------->
+                <img style="max-height: 100%; height: 100%;" src="/static/images/strength.gif" class="menu-attribute-image special-attribute-image" id="special-attribute-image-strength" alt="a fallout vault boy gif from fallout representing the strength special attribute">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/perception.gif" class="menu-attribute-image special-attribute-image" id="special-attribute-image-perception" alt="a fallout vault boy gif from fallout representing the perception special attribute">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/endurance.gif" class="menu-attribute-image special-attribute-image" id="special-attribute-image-endurance" alt="a fallout vault boy gif from fallout representing the endurance special attribute">
+                <img style="max-height: 100%; height: 100%;"  src="/static/images/charisma.gif" class="menu-attribute-image special-attribute-image" id="special-attribute-image-charisma" alt="a fallout vault boy gif from fallout representing the charisma special attribute">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/intelligence.gif" class="menu-attribute-image special-attribute-image" id="special-attribute-image-intelligence" alt="a fallout vault boy gif from fallout representing the intelligence special attribute">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/agility.gif" class="menu-attribute-image special-attribute-image" id="special-attribute-image-agility" alt="a fallout vault boy gif from fallout representing the agility special attribute">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/luck.gif" class="menu-attribute-image special-attribute-image special-attribute-image-active" id="special-attribute-image-luck" alt="a fallout vault boy gif from fallout representing the luck special attribute">
+                <!-- descriptions ----------------------------------------------------------------------------------------->
+                <p class="special-attribute-description" id="special-attribute-description-strength">
+                  Strength is a measure of your raw physical power. It affects how much you can carry, and determines the effectiveness of all melee attacks.
+
+                </p>
+                <p class="special-attribute-description" id="special-attribute-description-perception">
+                  Perception is your environmental awareness and "sixth sense," and affects weapon accuracy in V.A.T.S.
+                </p>
+                <p class="special-attribute-description" id="special-attribute-description-endurance">
+                  Endurance is the measure of overall physical fitness. It affects your total health and the action point drain from sprinting.
+
+                </p>
+                <p class="special-attribute-description" id="special-attribute-description-charisma">
+                  Charisma is your ability to charm and convince others. It affects your success to persuade others in dialogue and prices when you barter.
+   </p>
+                <p class="special-attribute-description" id="special-attribute-description-intelligence">
+                  Intelligence is the measure of your overall mental acuity, and affects the number of experience points earned.
+        </p>
+                <p class="special-attribute-description" id="special-attribute-description-agility">
+                  Agility is a measure of your overall finesse and reflexes. It affects the number of Action Points in V.A.T.S. and your ability to sneak.
+         </p>
+                <p class="special-attribute-description special-attribute-description-active" id="special-attribute-description-luck">
+                  Luck is a measure of your general good fortune, and affects the recharge rates of critical hits.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    `;
+    $('#myTabContent').html(showHTML);
+
+    // Add event listeners after the HTML content is inserted
+    const attributeBoxes = document.querySelectorAll('.menu-attribute-box');
+    const images = document.querySelectorAll('.special-attribute-image');
+    const descriptions = document.querySelectorAll('.special-attribute-description');
+    const menus = document.querySelectorAll('.special-attribute-box');
+
+    // Remove active class from all images and descriptions
+    function removeActiveClass() {
+        menus.forEach(menu => {
+            menu.classList.remove('special-attribute-box-active');
+        });
+        images.forEach(image => {
+            image.classList.remove('special-attribute-image-active');
+        });
+        descriptions.forEach(description => {
+            description.classList.remove('special-attribute-description-active');
+        });
+    }
+
+    // Add event listeners to each attribute box
+    attributeBoxes.forEach(box => {
+        box.addEventListener('mouseover', function() {
+            // Remove active class from all images and descriptions
+            removeActiveClass();
+
+            // Add active class to the hovered attribute's image and description
+            const attribute = this.id.split('-').pop(); // Get the attribute name from the box ID
+            const image = document.getElementById(`special-attribute-image-${attribute}`);
+            const description = document.getElementById(`special-attribute-description-${attribute}`);
+            const menuButton = document.getElementById(`special-attribute-box-${attribute}`);
+
+            if (image) {
+                image.classList.add('special-attribute-image-active');
+            }
+            if (menuButton) {
+                menuButton.classList.add('special-attribute-box-active');
+            }
+            if (description) {
+                description.classList.add('special-attribute-description-active');
+            }
+        });
+    });
+};
+
+const showStatus = () => {
+    var showHtml = `
+        <div class="tab-pane fade show active" id="status" role="tabpanel">
+            <div class="center-image">
+                <img src="/static/images/vault_boy_walking.gif">
+            </div>
+            <div class="stat-bar-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w30"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row stat-numbers">
+                <div class="spacer-numbers"></div>
+                <div class="col-2">
+                    <img src="/static/images/gun.png" class="img-responsive">
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img src="/static/images/crosshair.png" class="img-responsive">
+                    </div>
+                    <div class="points-crosshair">
+                        18
+                    </div>
+                </div>
+                <div class="col-1 transparent"></div>
+                <div class="col-2">
+                    <img src="/static/images/helmet.png" class="img-responsive helmet">
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img src="/static/images/flash.png" class="img-responsive">
+                    </div>
+                    <div class="points-flash">
+                        5
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img src="/static/images/radiation.png" class="img-responsive radiation">
+                    </div>
+                    <div class="points-radiation">
+                        10
+                    </div>
+                </div>
+                <div class="col-2 transparent"></div>
+            </div>
+            <div class="username">
+                <span>BUNNY</span>
+            </div>
+        </div>
+        <div class="tab-pane fade show" id="special" role="tabpanel">
+            Special inside
+        </div>
+        <div class="tab-pane fade show" id="perks" role="tabpanel">
+            Perks inside
+        </div>
+    `;
+    $('#myTabContent').html(showHtml);
+};
+
+const showPerks = () => {
+    var showHTML = `
+    <section class="core-display core-display-active" id="stat-perk-section">
+        <div class="menu-container perk-container">
+            <div class="menu-attributes perk-attributes">
+                <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-chemist">
+                    <p class="menu-attribute perk-attribute">Chemist</p>
+                </div>
+                <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-cannibal">
+                    <p class="menu-attribute perk-attribute">Cannibal</p>
+                </div>
+                <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-fortune_finder">
+                    <p class="menu-attribute perk-attribute">Fortune Finder</p>
+                </div>
+                <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-idiot_savant">
+                    <p class="menu-attribute perk-attribute">Idiot Savant</p>
+                </div>
+                <div class="menu-attribute-box perk-attribute-box" id="perk-attribute-box-nerd_rage">
+                    <p class="menu-attribute perk-attribute">Nerd Rage</p>
+                </div>
+                <div class="menu-attribute-box perk-attribute-box perk-attribute-box-active" id="perk-attribute-box-heavy">
+                    <p class="menu-attribute perk-attribute">Heavy Gunner</p>
+                </div>
+            </div>
+            <div class="menu-right-column perk-right-column">
+                <!-- images ----------------------------------------------------------------------------------------------->
+                <img style="max-height: 100%; height: 100%;" src="/static/images/chemist.png" class="menu-attribute-image perk-attribute-image" id="perk-attribute-image-chemist" alt="a fallout vault boy from the video game fallout representing the chemist perk">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/cannibal.png" class="menu-attribute-image perk-attribute-image" id="perk-attribute-image-cannibal" alt="a fallout vault boy from the video game fallout representing the cannibal perk">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/fortune_finder.png" class="menu-attribute-image perk-attribute-image" id="perk-attribute-image-fortune_finder" alt="a fallout vault boy from the video game fallout representing the fortune finder perk">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/idiot_savant.png" class="menu-attribute-image perk-attribute-image" id="perk-attribute-image-idiot_savant" alt="a fallout vault boy from the video game fallout representing the idiot savant perk">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/nerd_rage.png" class="menu-attribute-image perk-attribute-image" id="perk-attribute-image-nerd_rage" alt="a fallout vault boy from the video game fallout representing the nerd rage perk">
+                <img style="max-height: 100%; height: 100%;" src="/static/images/heavy_gunner.png" class="menu-attribute-image perk-attribute-image perk-attribute-image-active" id="perk-attribute-image-heavy" alt="a fallout vault boy from the video game fallout representing the heavy gunner perk">
+                <!-- descriptions ----------------------------------------------------------------------------------------->
+                <p class="perk-attribute-description" id="perk-attribute-description-chemist">
+                  Far out. Whether you're dabbling in Buffout, chewing down tins of grape Mentats, or even creating your own chem concoctions, the user and abuser of chems should never be without this perk.
+                </p>
+                <p class="perk-attribute-description" id="perk-attribute-description-cannibal">
+                  Feast on mortal flesh to heal your wounds! But don't do it around any polite folk, as you aren't seen in the best of lights.                </p>
+                <p class="perk-attribute-description" id="perk-attribute-description-fortune_finder">
+                  You've learned to discover the Wasteland's hidden wealth, and find more bottle caps in containers.
+                </p>
+                <p class="perk-attribute-description" id="perk-attribute-description-idiot_savant">
+                  You're not stupid! Just...different. The main advantage is the accrual of XP at a faster-than-normal pace, which allows you to level up, receive a Perk Point, and gain more levels and perks with haste.
+                </p>
+                <p class="perk-attribute-description" id="perk-attribute-description-nerd_rage">
+                  Increased Damage Resistance and output when at 20% of total Hit Points.
+
+                </p>
+                <p class="perk-attribute-description perk-attribute-description-active" id="perk-attribute-description-heavy">
+                  Thanks to practice and conditioning, you're able to utilize the weightiest of weapons with an extra degree of precision.
+                </p>
+            </div>
+        </div>
+    </section>
+    `;
+    $('#myTabContent').html(showHTML);
+
+    // Add event listeners after the HTML content is inserted
+    const attributeBoxes = document.querySelectorAll('.perk-attribute-box');
+    const images = document.querySelectorAll('.perk-attribute-image');
+    const descriptions = document.querySelectorAll('.perk-attribute-description');
+    const menus = document.querySelectorAll('.perk-attribute-box');
+
+    // Remove active class from all images and descriptions
+    function removeActiveClass() {
+        menus.forEach(menu => {
+            menu.classList.remove('perk-attribute-box-active');
+        });
+        images.forEach(image => {
+            image.classList.remove('perk-attribute-image-active');
+        });
+        descriptions.forEach(description => {
+            description.classList.remove('perk-attribute-description-active');
+        });
+    }
+
+    // Add event listeners to each attribute box
+    attributeBoxes.forEach(box => {
+        box.addEventListener('mouseover', function() {
+            // Remove active class from all images and descriptions
+            removeActiveClass();
+
+            // Add active class to the hovered attribute's image and description
+            const attribute = this.id.split('-').pop(); // Get the attribute name from the box ID
+            const image = document.getElementById(`perk-attribute-image-${attribute}`);
+            const description = document.getElementById(`perk-attribute-description-${attribute}`);
+            const menuButton = document.getElementById(`perk-attribute-box-${attribute}`);
+
+            if (image) {
+                image.classList.add('perk-attribute-image-active');
+            }
+            if (menuButton) {
+                menuButton.classList.add('perk-attribute-box-active');
+            }
+            if (description) {
+                description.classList.add('perk-attribute-description-active');
+            }
+            console.log(menuButton)
+        });
+    });
+};
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+<div class="center">
+    <form action="/controller/login" method="post">
+        <div class="cyber-tile-big fg-white bg-dark-purple p-3">
+            <div class="m-3 pb-2">
+                <h3 class="cyber-h ac-cyan blenderpro-font">Authentication</h3>
+                <div class="cyber-input ac-purple">
+                    <input class="color-white blenderpro-font" id="username" type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="mt-2 cyber-input ac-purple">
+                    <input class="color-white blenderpro-font" id="password" type="password" placeholder="Password" name="password" required>        
+                </div>
+            </div>
+        </div>
+        <button class="mt-3 cyber-button-small bg-purple fg-white" id="login-btn" type="submit">
+            Login
+            <span class="glitchtext">010010000101010001000010</span>
+        </button>
+    </form>
+</div>
+
+{% endblock %}

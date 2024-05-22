@@ -1,0 +1,1 @@
+FLAG = "HTB{th3y_s4id_W3lc0m3_Ab0ard}"

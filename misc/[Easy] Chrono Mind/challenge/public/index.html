@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ChronoMind AI</title>
+    <meta name="author" content="rayhan0x01">
+    <link rel="stylesheet" href="/static/vendors/base/vendor.bundle.base.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One%7CSource+Code+Pro%7CHandjet" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/site.css">
+    <link rel="shortcut icon" href="/static/images/logo.png" />
+  </head>
+  <body>
+    <div class="container mt-5">
+        <div class="wrapper quote-machine">
+
+          <header class="header-top text-center">
+            <h1>ChronoMind AI Knowledge Base</h1>
+            <p>Select your preferred Knowledge repository</p>
+          </header>
+          <main class="main-area">
+            
+            <ul class="list-group">
+                <li class="list-item hidden p-5" id="resp-item">
+                    <div class="topic-info">
+                        <p class="topic-name text-uppercase">Something Went Wrong</p>
+                        <p class="topic-desc">Please Try Again</p>
+                    </div>
+                </li>
+                <li class="list-item" data-topic="weapon-systems">
+                    <img src="/static/images/weapons.webp" class="chrono-items">
+                    <div class="topic-info">
+                        <p class="topic-name">Weapon Systems</p>
+                        <p class="topic-desc"></p>
+                    </div>
+                </li>
+                <li class="list-item"  data-topic="location-intelligence">
+                    <img src="/static/images/maps.webp" class="chrono-items">
+                    <div class="topic-info">
+                        <p class="topic-name">Location Intelligence</p>
+                        <p class="topic-desc"></p>
+                    </div>
+                </li>
+                <li class="list-item" data-topic="communication-systems">
+                    <img src="/static/images/comm_devices.webp" class="chrono-items">
+                    <div class="topic-info">
+                        <p class="topic-name">Communication Systems</p>
+                        <p class="topic-desc"></p>
+                    </div>
+                </li>
+                <li class="list-item hidden p-5" id="loading-item">
+                    <div class="topic-info">
+                        <p class="topic-name text-uppercase">Please Stand By</p>
+                        <p class="topic-desc">Creating knowledge base room...</p>
+                        <span class="loader"></span>
+                    </div>
+                </li>
+            </ul>
+          </main>
+         
+        </div>
+    
+
+    </div>
+
+    
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/vendors/rpgui/rpgui.min.js"></script>
+    <script src="/static/js/start.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+prisoner_profile:
+  name: Jonathan "Johnny" Archer
+  age: 45
+  height: "6'1"
+  complexity: High
+  marks_tattoos:
+    - "Tattoo of architectural blueprints on left forearm"
+    - "Scar above right eyebrow"
+  eye_color: Blue
+  hair_color: Brown
+  origin: New Chicago
+  headshot: "https://example.com/headshots/jonathan_archer.jpg"
+  occupation: Architect
+  crime: "Sabotage of mutant stronghold construction"
+  sentence: "Indefinite imprisonment"
+  penitentiary_name: Prison-Pipeline
+  prisoner_zone: Alpha-4
+  prisoner_cell: A4-11
+  penalties:
+    - "Forced labor in hazardous conditions"
+    - "Solitary confinement for insubordination"
+  behavior_record:
+    incidents: 5
+    last_incident: "Attempted sabotage of prison defenses - 2024-04-10"
+    remarks: "Highly intelligent and resourceful, poses significant escape risk"
+  health_status:
+    physical: "Malnourished, multiple untreated injuries"
+    mental: "Showing signs of severe stress and psychological trauma"

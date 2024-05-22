@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Urban Planning Commission Underground Pathway Project Report</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
+        header { text-align: center; margin-bottom: 20px; }
+        h1 { color: #2a2a2a; }
+        .content { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        img { max-width: 100%; height: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .graph { color: #444; margin-top: 20px; }
+        body { font-family: 'Arial', sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
+        header { text-align: center; margin-bottom: 20px; }
+        h1 { color: #2a2a2a; }
+        .content { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        img { max-width: 100%; height: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .graph { color: #444; margin-top: 20px; }
+        .fetch-form { margin-bottom: 20px; }
+        .fetch-form input[type="text"] { padding: 5px; font-size: 16px; width: 200px; margin-right: 10px; }
+        .fetch-form input[type="submit"] { padding: 5px 10px; font-size: 16px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="static/images/logo.webp" alt="Urban Planning Commission Logo" width="100">
+        <h1>Urban Planning Commission Underground Pathway Project Report</h1>
+    </header>
+    <div class="content">
+        <h2>Project Overview</h2>
+        <p><strong>Project Name:</strong> Metro Expansion Line 3B</p>
+        <p><strong>Revision:</strong> 5</p>
+        <p><strong>Approved By:</strong> Dr. Helen Cho</p>
+
+        <h2>Project Contents</h2>
+        <ul>
+            <li>Site Overview Map</li>
+            <li>Detailed Schematics of Tunnel Sections</li>
+            <li>Geological Analysis</li>
+            <li>Machinery and Equipment List</li>
+            <li>Safety Protocols</li>
+        </ul>
+        <h2>Site Overview Map</h2>
+        <img src="static/images/site_map.webp" alt="Site Map">
+
+        <h2>Geological Analysis</h2>
+        <img src="static/images/geological_analysis.webp" alt="Geological Analysis">
+
+        <h2>Graphical Analysis of Project Timeline</h2>
+        <div class="graph">
+            <img src="static/images/project_timeline.webp" alt="Project Timeline">
+        </div>
+
+        <h2>Safety Protocols</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Protocol</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Emergency Evacuation Routes</td>
+                    <td>All underground tunnels will have clearly marked evacuation routes every 100 meters. Routes are illuminated by emergency lighting and lead to the nearest surface exit. Evacuation maps are posted at each junction and worker station.</td>
+                </tr>
+                <tr>
+                    <td>Assembly Points</td>
+                    <td>Designated assembly points are located outside each exit where headcounts will be conducted. Assembly point locations are marked on all evacuation maps and are equipped with first aid stations.</td>
+                </tr>
+                <tr>
+                    <td>Emergency Drills</td>
+                    <td>Mandatory emergency evacuation drills are held quarterly to ensure all personnel are familiar with evacuation procedures and routes. Drill performance is reviewed to make ongoing improvements.</td>
+                </tr>
+                <tr>
+                    <td>Personal Protective Equipment (PPE)</td>
+                    <td>All personnel must wear standard issue PPE at all times while on-site. This includes helmets with headlamps, high-visibility jackets, steel-toe boots, and gloves. PPE is inspected regularly and replaced as needed.</td>
+                </tr>
+                <tr>
+                    <td>Machinery Operation</td>
+                    <td>Only certified personnel may operate heavy machinery. Operators must complete a safety course and pass a proficiency test. Daily logs of machine use and operator schedules are maintained for accountability.</td>
+                </tr>
+                <tr>
+                    <td>Regular Maintenance Checks</td>
+                    <td>All equipment and machinery are subject to a strict maintenance schedule. Maintenance checks are performed at the start of each shift. Any equipment found to be defective is immediately taken out of service until repaired.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Employee Presence</h2>
+        <div class="fetch-form">
+            <form id="fetchUserForm">
+                <input type="text" id="username" name="username" placeholder="Enter username">
+                <input type="submit" value="Search User">
+            </form>
+        </div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Departments</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="absenceContainer">
+    </tbody>
+</table>
+
+    </div>
+    <script src="/static/js/admin.js"></script>
+</body>
+</html>

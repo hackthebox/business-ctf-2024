@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+cd /home/ctf/frontend/ && \
+cp -r build/* /var/www/html/ && \
+cp -r public/connection-info/ /var/www/html/ && \
+cp -r public/constants/ /var/www/html/ && \
+chmod 777 /var/www/html/constants/token-list.json && \
+lighttpd -f /etc/lighttpd/lighttpd.conf

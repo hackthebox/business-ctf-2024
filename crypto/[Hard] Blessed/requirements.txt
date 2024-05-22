@@ -1,0 +1,2 @@
+pycryptodome
+py_ecc

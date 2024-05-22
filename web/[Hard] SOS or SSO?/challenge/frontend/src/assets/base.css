@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Alkhemikal;
+  src: url('fonts/Alkhemikal.ttf');
+}
+
+@font-face {
+  font-family: Seagram;
+  src: url('fonts/Seagram.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('img/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Alkhemikal;
+}

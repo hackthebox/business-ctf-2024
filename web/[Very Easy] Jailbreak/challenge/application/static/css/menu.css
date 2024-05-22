@@ -1,0 +1,77 @@
+:root {
+    --pip-boy-primary-color: #18dc0c;
+    --pip-boy-secondary-color: #11291b;
+    --pip-boy-background-color: #10170f;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+  .menu-attributes, .menu-right-column {
+    width: 50%;
+  }
+  .menu-attributes {
+    margin: 0 0.5rem 0 0;
+  }
+  .menu-attribute-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem 0 0.8rem;
+  }
+  .menu-attribute-box:hover {
+    cursor: default;
+  }
+  div[class$="-attribute-box-active"] {
+    background-color: var(--pip-boy-primary-color);
+  }
+  div[class$="-attribute-box-active"] > p {
+    color: var(--pip-boy-secondary-color);
+  }
+  .menu-attribute, .special-value {
+    font-size: 2rem;
+  }
+  .menu-right-column {
+    margin: 0 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 28rem;
+  }
+  .special-attribute-description.special-attribute-description-active, .perk-attribute-description.perk-attribute-description-active, .job-attribute-description.job-attribute-description-active, .study-attribute-description.study-attribute-description-active, .skill-attribute-description.skill-attribute-description-active, .data-attribute-description.data-attribute-description-active {
+    display: block;
+  }
+  .special-attribute-description.special-attribute-description-active, .perk-attribute-description.perk-attribute-description-active {
+    font-size: 1.5rem;
+  }
+  .job-attribute-description.job-attribute-description-active, .study-attribute-description.study-attribute-description-active, .skill-attribute-description.skill-attribute-description-active, .data-attribute-description.data-attribute-description-active {
+    font-size: 1.4rem;
+  }
+  .special-attribute-description, .perk-attribute-description, .job-attribute-description, .study-attribute-description, .skill-attribute-description, .data-attribute-description {
+    display: none;
+  }
+  .menu-attribute-image {
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(0.8);
+  }
+  .special-attribute-image.special-attribute-image-active, .perk-attribute-image.perk-attribute-image-active {
+    display: block;
+    max-height: 66%;
+  }
+  .menu-attribute-image {
+    display: none;
+  }
+  /** RESPONSIVE ********************************************************************************************************/
+  @media screen and (max-width: 960px) {
+    .special-attribute-image.special-attribute-image-active, .perk-attribute-image.perk-attribute-image-active {
+      display: block;
+      max-height: 80px;
+    }
+  }
+  @media screen and (max-width: 690px) {
+    .special-attribute-image.special-attribute-image-active, .perk-attribute-image.perk-attribute-image-active {
+      display: block;
+      max-height: 60px;
+    }
+  }
+  

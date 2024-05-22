@@ -1,0 +1,16 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.19.2",
+    "vm2": "3.9.19"
+  }
+}

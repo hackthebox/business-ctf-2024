@@ -1,0 +1,28 @@
+prisoner_profile:
+  name: Dr. Emily "Doc" Caldwell
+  age: 41
+  height: "5'9"
+  complexity: Medium
+  marks_tattoos:
+    - "Caduceus symbol tattoo on left wrist"
+    - "Surgical scar on abdomen"
+  eye_color: Hazel
+  hair_color: Blonde
+  origin: Sanctuary City
+  headshot: "https://example.com/headshots/emily_caldwell.jpg"
+  occupation: Medical Specialist
+  crime: "Providing medical aid to human insurgents"
+  sentence: "20 years with possibility of parole in 5 years"
+  penitentiary_name: Prison-Pipeline
+  prisoner_zone: Delta-3
+  prisoner_cell: D3-07
+  penalties:
+    - "Revoked medical practice privileges"
+    - "Forced labor in the prison infirmary under supervision"
+  behavior_record:
+    incidents: 3
+    last_incident: "Smuggling medical supplies to other prisoners - 2024-03-12"
+    remarks: "Compassionate but willing to break rules to help others"
+  health_status:
+    physical: "Generally healthy but undernourished"
+    mental: "Stable but showing signs of depression"

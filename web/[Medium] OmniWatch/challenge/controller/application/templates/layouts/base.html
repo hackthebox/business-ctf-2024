@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include "layouts/head.html" %}
+    </head>
+    <body class="crt">
+        {% if nav_enabled %}
+                {% include "layouts/navbar.html" %}
+        {% endif %}
+        {% block content %}{% endblock %}
+    </body>
+</html>

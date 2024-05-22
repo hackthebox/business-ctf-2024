@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Prison Pipeline :: Prisoner Record Management</title>
+        <meta name="author" content="rayhan0x01">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <link rel="stylesheet" href="/static/css/emoji.css">
+        <link rel="stylesheet" href="/static/css/cyberpunk.css">
+        <link rel="stylesheet" href="/static/css/admin.css">
+    </head>
+    <body>
+        <div class="flex row w-100 ml-2" style="max-width:1200px;margin: auto;">
+            <div class="column w-65 p-1">
+                <h2 class="play-once">Prisoner Record Management</h2>
+                <div class="row w-100">
+                    <div class="field w-100">
+                        <label class="glow text">Prisoner File Editor</label>
+                        <textarea rows="25" id="profile-editor" spellcheck="false" autofocus></textarea>
+                        <input type="hidden" id="profile-id">
+                    </div>
+                </div>
+                <h2></h2>
+                <div class="flex row mt-1">
+                    <div class="column">
+                        <button class="green" onclick="">Update File</button>
+                    </div>
+                    <div class="column ml-1">
+                        <p class="glow resp-msg" id="update-resp">Please Wait</p>
+                    </div>
+                </div>
+                <div class="flex row w-100 " style="max-width:1200px;margin: auto;">
+                    <div class="column w-100 pt-1">
+                        <div class="row w-100">
+                            <div class="field w-100">
+                                <label class="glow text">Prisoner Importer</label>
+                                <input type="text" placeholder="URL" style="max-width: 760px;" spellcheck="false" id="prisoner-url"/>
+                            </div>
+                        </div>
+                        <h2></h2>
+                        <div class="flex row mt-1">
+                            <div class="column">
+                                <button class="red" onclick="importProfile()">Import Prisoner Record</button>
+                            </div>
+                            <div class="column ml-1">
+                                <p class="glow resp-msg" id="import-resp">Please Wait</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex column w-32 p-1">
+                <h2>Prisoner List</h2>
+                <div class="side-menu">
+                    <!-- add a search bar -->
+                    <div class="flex column mt-2 mb-1 hoverable">
+                        <div class="flex justify-start w-100 glow text">
+                            <input type="text" class="glow" id="search" placeholder="Search Prisoner..">
+                            <button class="green fill">Search</button>
+                        </div>
+                    </div>
+                    <div class="prisoner-list">
+                        
+                    </div>
+                    <div class="flex column">
+                        <div class="p-1 pb-2 flex-wrap">
+                            <div class="btn-group">
+                                <nav>
+                                    <ul style="text-align: center;">
+                                        <li class="page-item hoverable"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                        <li class="page-item hoverable"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item hoverable"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item hoverable"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item hoverable">
+                                            <a class="page-link hoverable" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="/static/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/js/jquery-3.6.0.min.js"></script>
+        <script src="/static/js/admin.js"></script>
+    </body>
+</html>

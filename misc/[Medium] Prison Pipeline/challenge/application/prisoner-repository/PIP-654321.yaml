@@ -1,0 +1,28 @@
+prisoner_profile:
+  name: Marcus "Ironclad" Steele
+  age: 52
+  height: "6'3"
+  complexity: High
+  marks_tattoos:
+    - "Military insignia tattoo on right shoulder"
+    - "Multiple battle scars on torso"
+  eye_color: Brown
+  hair_color: Gray
+  origin: Fort Freedom
+  headshot: "https://example.com/headshots/marcus_steele.jpg"
+  occupation: Army General
+  crime: "Leading a human rebellion against mutant overlords"
+  sentence: "Life imprisonment without parole"
+  penitentiary_name: Prison-Pipeline
+  prisoner_zone: Omega-1
+  prisoner_cell: O1-01
+  penalties:
+    - "Permanent solitary confinement"
+    - "Restricted communication privileges"
+  behavior_record:
+    incidents: 12
+    last_incident: "Orchestrating an attempted prison-wide revolt - 2024-01-15"
+    remarks: "Exceptional strategic mind, poses a significant threat to mutant control"
+  health_status:
+    physical: "Strong but with untreated chronic injuries"
+    mental: "Resilient but exhibiting signs of psychological wear"

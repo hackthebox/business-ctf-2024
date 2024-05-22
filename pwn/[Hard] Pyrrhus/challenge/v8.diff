@@ -1,0 +1,68 @@
+diff --git a/src/builtins/builtins-array.cc b/src/builtins/builtins-array.cc
+index b6b7c7c74d4..d38e3f66f49 100644
+--- a/src/builtins/builtins-array.cc
++++ b/src/builtins/builtins-array.cc
+@@ -653,6 +653,25 @@ BUILTIN(ArrayUnshift) {
+   return Smi::FromInt(new_length);
+ }
+ 
++BUILTIN(ArrayNumerify) {
++  HandleScope scope(isolate);
++
++  Handle<JSArray> array = Handle<JSArray>::cast(args.receiver());
++  int arr_len = static_cast<int>(array->elements()->length());
++  Tagged<FixedArray> elems = FixedArray::cast(array->elements());
++
++  for (int i = 0; i < arr_len; i++) {
++    Handle<Object> curr_elem = Handle<Object>(elems->get(i), isolate);
++
++    if (IsHole(*curr_elem) || IsNaN(*curr_elem)) continue;
++    if (!IsNumber(*curr_elem) && !Object::ToNumber(isolate, curr_elem).ToHandle(&curr_elem)) continue;
++
++    elems->set(i, Smi::cast(*curr_elem));
++  }
++
++  return *args.receiver();
++}
++
+ // Array Concat -------------------------------------------------------------
+ 
+ namespace {
+diff --git a/src/builtins/builtins-definitions.h b/src/builtins/builtins-definitions.h
+index 6569ad187e7..1b769369a85 100644
+--- a/src/builtins/builtins-definitions.h
++++ b/src/builtins/builtins-definitions.h
+@@ -437,6 +437,7 @@ namespace internal {
+   TFJ(ArrayPrototypeValues, kJSArgcReceiverSlots, kReceiver)                   \
+   /* ES6 #sec-%arrayiteratorprototype%.next */                                 \
+   TFJ(ArrayIteratorPrototypeNext, kJSArgcReceiverSlots, kReceiver)             \
++  CPP(ArrayNumerify)                                                           \
+                                                                                \
+   /* ArrayBuffer */                                                            \
+   /* ES #sec-arraybuffer-constructor */                                        \
+diff --git a/src/compiler/typer.cc b/src/compiler/typer.cc
+index 9a346d134b9..774a4e56585 100644
+--- a/src/compiler/typer.cc
++++ b/src/compiler/typer.cc
+@@ -1937,6 +1937,8 @@ Type Typer::Visitor::JSCallTyper(Type fun, Typer* t) {
+       return Type::Receiver();
+     case Builtin::kArrayUnshift:
+       return t->cache_->kPositiveSafeInteger;
++    case Builtin::kArrayNumerify:
++      return Type::Receiver();
+ 
+     // ArrayBuffer functions.
+     case Builtin::kArrayBufferIsView:
+diff --git a/src/init/bootstrapper.cc b/src/init/bootstrapper.cc
+index 058c24cd428..79a9fe9e582 100644
+--- a/src/init/bootstrapper.cc
++++ b/src/init/bootstrapper.cc
+@@ -2566,6 +2566,8 @@ void Genesis::InitializeGlobal(Handle<JSGlobalObject> global_object,
+                           false);
+     SimpleInstallFunction(isolate_, proto, "join", Builtin::kArrayPrototypeJoin,
+                           1, false);
++    SimpleInstallFunction(isolate_, proto, "numerify", Builtin::kArrayNumerify,
++                          0, false);
+ 
+     {  // Set up iterator-related properties.
+       Handle<JSFunction> keys = InstallFunctionWithBuiltinId(

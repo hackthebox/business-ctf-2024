@@ -1,0 +1,230 @@
+body {
+    background-color: #051D29;
+    font-family: "Source Code Pro", cursive !important; 
+  }
+
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bo {
+     font-family: "Black Ops One", cursive; 
+  }
+
+
+
+  .logo-sm {
+    display: none !important;
+  }
+
+  .logo-lg {
+    display: block;
+  }
+  
+  .logo {
+      font-size: 46px;
+      font-weight: bold;
+  }
+.logo:hover{ 
+    color: #fff;
+}
+
+  
+  .url-box, .url-box:focus {
+      background-color: #0B223E;
+      border-color: #3e97fc;
+  }
+  
+  .input-group button {
+      border-color: #3e97fc;
+  }
+  
+  .text-muted-2 {
+      color: #78768b;
+      font-size: 13px;
+      padding-top: 2px;
+  }
+  
+  .push-up {
+      height: 25vh;
+  }
+  
+   .top-header {
+      background-color: rgba(14, 149, 35, 0.31);
+      border-bottom: 1px solid #212228;
+      display: flex;
+      align-items: center;
+      height: 67px;
+  }
+  
+.top-header p {
+    margin: 0;
+}
+
+.new-chat-btn {
+    border-color: #22a61f;
+    background: rgba(255,255,255,0.1);
+    color: #01c20b;
+    font-family: "Black Ops One";
+}
+.new-chat-btn:hover {
+    background: rgba(255,255,255,0.5);
+    border-color: #22a61f;
+    color: #fff;
+}
+
+#link {
+    font-weight: bold;
+}
+
+#prompt, #prompt-btn {
+    resize: none;
+    height: 74px;
+    background-color: rgb(5, 41, 36);
+    border: none !important;
+    color: lime;
+    
+}
+
+#prompt-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#prompt:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.chat-row {
+    overflow-y: scroll;
+}
+
+.bubble {
+     background-color: rgba(28, 170, 43, 0.1);
+    border: 1px solid #25B91D;
+    padding: 20px 20px;
+    border-radius: 0px;
+    margin-bottom: 25px;
+}
+
+.gpt-bubble {
+    background-color: #224838;
+    border: none;
+}
+
+.avatar {
+    background-color: rgba(27, 108, 20, 0.78);
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.message {
+    margin: 10px 15px 5px 57px;
+}
+
+.gpt-message {
+    margin: 10px 15px 5px 57px;
+}
+
+.prompt-area {
+    border: 1px solid #31E81A;
+    border-radius: 5px;
+      background-color: #052824;
+}
+
+.chat-container {
+    height: calc(100vh - 70px) !important;
+}
+
+
+.card {
+    background-color: rgba(46, 157, 63, 0.18);
+    border: none;
+    font-size: 13px;
+}
+
+.card-text {
+    color: lime;
+}
+
+#resp-msg {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    display: none;
+    font-size: 13px;
+    background: rgba(255,0,0,0.2);
+    color: red;
+}
+
+#loading {
+    display: none;
+}
+
+
+.status-area {
+    min-height: 70px;
+}
+
+  @media (max-width: 1200px) {
+      .headline {
+          font-size: 6vw;
+      }
+  }
+
+.hidden {
+    display: none !important;
+}
+  
+.author {
+    font-size: 14px;
+    color: #78768b;
+    padding-right: 15px;
+}
+
+.author:hover {
+    color: #fff;
+    cursor: pointer;
+}
+  
+  @media (max-width: 600px) {
+      .headline {
+          font-size: 10vw;
+      }
+      .chat-sidebar {
+        width: 4.5rem;
+      }
+
+      .logo-lg {
+        display: none !important;
+      }
+      .logo-sm {
+        display: block !important;
+      }
+      .logo {
+          font-size: 22px;
+      }
+      .new-chat-btn {
+        width: 100%;
+        padding: 5px 0px;
+      }
+      .chat-lg {
+          display: none;
+      }
+      .chat-plus {
+        font-size: 22px;
+      }
+  }
+
+
+.chat-example {
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+
+<div id="loadingSection" class="loading-container">
+    <img class="loading-img" src="/controller/static/img/icon.png">
+</div>
+<div class="container">
+    <div class="row mt-5 pt-3">
+        <div class="cyber-tile-big fg-white bg-dark-purple">
+            <h3 class="cyber-h ac-cyan blenderpro-font">{{ device["device_name"] }}</h3>
+            <img class="cyber-glitch-1 tracker-image mb-3" src="/controller/static/img/devices/{{device['device_id']}}.jpg"><br>
+            <span><strong>Device ID:</strong> {{ device["device_id"] }}</span><br>
+            <span><strong>Device Name:</strong> {{ device["device_name"] }}</span><br>
+            <span><strong>Manufacturer:</strong> {{ device["manufacturer"] }}</span><br>
+            <span><strong>Tracking Type:</strong> {{ device["tracking_type"] }}</span><br>
+            <span><strong>Battery Level:</strong> {{ device["battery_level"] }}</span><br>
+            <span><strong>Encryption Level:</strong> {{ device["encryption_level"] }}</span><br>
+            <span><strong>Communication Protocol:</strong> {{ device["communication_protocol"] }}</span><br>
+            <span><strong>Firmware Version:</strong> {{ device["firmware_version"] }}</span><br>
+            <span><strong>Activation Status:</strong> {{ device["activation_status"] }}</span><br>
+            <span><strong>Last Update Timestamp:</strong> {{ device["last_update_timestamp"] }}</span><br><br>
+            <a href="/oracle/json/{{device['device_id']}}" target="_blank" class="cyber-button-small bg-purple fg-white mt-5">Get location</a>
+        </div>
+    </div>
+</div>
+<script src="/controller/static/js/main.js"></script>
+
+{% endblock %}

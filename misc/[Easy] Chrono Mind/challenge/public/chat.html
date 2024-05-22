@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoMind | Chat</title>
+    <meta name="author" content="rayhan0x01">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One%7CSource+Code+Pro%7CHandjet" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/site.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+</head>
+<body>
+    <main class="d-flex flex-nowrap">
+        
+        <div class="container-fluid g-0 w-100">
+            <div class="container-fluid top-header">
+                <h1 class="ms-2">ChronoMind Knowledge Base: <span id="topic"></span></h1>
+                <p class="ms-auto">
+                    <a href="/" class="w-100">
+                        <button class="btn btn-outline-light w-100 w-sm-50 new-chat-btn" role="button"><span class="chat-lg">New Room</span></button>
+                    </a>
+                </p>
+            </div>
+            <div class="container-fluid g-0 chat-container h-100">
+                <div class="d-flex flex-column align-items-center justify-content-start w-100 h-100">
+                    <div class="row chat-row w-100 h-100">
+                        <div id="chat-bubbles" class="col-lg-7 d-flex flex-column-reverse mt-3 mx-auto">
+
+                            <!-- placeholder -->
+                            <div id="chat-placeholder" class="chat-placeholder d-flex justify-content-center align-items-center h-100">
+                                <div class="row w-100">
+                                    <div class="col text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                                        <p class="bo my-3">Examples</p>
+                                        <div class="card my-3">
+                                            <div class="card-body">
+                                                <p class="card-text chat-example"></p>
+                                            </div>
+                                        </div>
+                                        <div class="card my-3">
+                                            <div class="card-body">
+                                                <p class="card-text chat-example"></p>
+                                            </div>
+                                        </div>
+                                        <div class="card my-3">
+                                            <div class="card-body">
+                                                <p class="card-text chat-example"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                        <p class="bo my-3">Limitations</p>
+                                        <div class="card my-3">
+                                            <div class="card-body">
+                                                <p class="card-text">Can't answer follow-up questions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card my-3">
+                                            <div class="card-body">
+                                                <p class="card-text">Can't remember what you said previously.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card my-3">
+                                            <div class="card-body">
+                                                <p class="card-text">Context detection is sometimes incorrect.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- placeholder end -->
+                        </div>
+                    </div>
+                    <div class="row prompt-row w-100">
+                        <div class="col-lg-8 mx-auto mb-3">
+                            <div class="status-area d-flex align-items-center justify-content-center">
+                                <div id="loading">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><style>.spinner_S1WN{fill: #fff;animation:spinner_MGfb .8s linear infinite;animation-delay:-.8s}.spinner_Km9P{animation-delay:-.65s}.spinner_JApP{animation-delay:-.5s}@keyframes spinner_MGfb{93.75%,100%{opacity:.2}}</style><circle class="spinner_S1WN" cx="4" cy="12" r="3"/><circle class="spinner_S1WN spinner_Km9P" cx="12" cy="12" r="3"/><circle class="spinner_S1WN spinner_JApP" cx="20" cy="12" r="3"/></svg>
+                                </div>
+                                <p id="resp-msg" class="alert alert-info">Typing...</p>
+                            </div>
+                            <div class="input-group prompt-area">
+                                <textarea class="form-control prompt-box" id="prompt" placeholder="Your Question Here..."></textarea>
+                                <button class="btn d-flex align-items-end pb-4" id="prompt-btn" role="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0ec80e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </button>
+                            </div>
+                            <label class="text-muted-2 w-100 text-center">ChronoMind can make mistakes. Consider checking important information.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/static/js/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/typed.umd.js"></script>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a4364d00.chunk.css",
+    "main.js": "./static/js/main.29af7886.chunk.js",
+    "runtime-main.js": "./static/js/runtime-main.f36cdeb5.js",
+    "static/css/2.4a26aa31.chunk.css": "./static/css/2.4a26aa31.chunk.css",
+    "static/js/2.db6310e0.chunk.js": "./static/js/2.db6310e0.chunk.js",
+    "index.html": "./index.html",
+    "static/js/2.db6310e0.chunk.js.LICENSE.txt": "./static/js/2.db6310e0.chunk.js.LICENSE.txt",
+    "static/media/brokenswap-icon.ba85e03a.png": "./static/media/brokenswap-icon.ba85e03a.png",
+    "static/media/brokenswap-logo.3b6b9732.png": "./static/media/brokenswap-logo.3b6b9732.png",
+    "static/media/dropdown.fef18eeb.svg": "./static/media/dropdown.fef18eeb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f36cdeb5.js",
+    "static/css/2.4a26aa31.chunk.css",
+    "static/js/2.db6310e0.chunk.js",
+    "static/css/main.a4364d00.chunk.css",
+    "static/js/main.29af7886.chunk.js"
+  ]
+}

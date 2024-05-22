@@ -1,0 +1,9 @@
+dcheck_always_on = false
+is_debug = false
+target_cpu = "x64"
+v8_enable_sandbox = false
+v8_enable_backtrace = true
+v8_enable_disassembler = true
+v8_enable_object_print = true
+v8_enable_verify_heap = false
+v8_enable_fast_mksnapshot = true

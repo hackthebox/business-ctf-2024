@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIP-OS(R) V1.33.7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/pipboy.app.css">
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+  </head>
+  <body onload="realtimeClock()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inventory">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">DATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/radio">RADIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rom">ROM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="map-container">
+      <img class="map-image  image-responsive" src="/static/images/map3.png">
+    </div>
+    <img class="map-cursor" src="/static/images/map cursor.png">
+    
+    <navbar class="navbar-light pip-footer pip-footer-map">
+      <div class="row">
+        <div class="col-3">
+          <div id="my_date"></div>
+        </div>
+        <div class="col-3 text-left">
+          <div class="clock-container">
+            <div id="clock"></div>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+          <span>LOCAL MAP</span>
+        </div>
+      </div>
+    </navbar>
+
+    <script src="/static/js/jquery-2.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/map.js"></script>
+  </body>
+</html>

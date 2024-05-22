@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: api
+    restart: always
+    build: ./challenge/api
+  
+  bot:
+    container_name: bot
+    restart: always
+    build: ./challenge/bot
+    env_file:
+      - .env

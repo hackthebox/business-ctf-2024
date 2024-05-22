@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title>NSA Server System Checker</title>
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/cyberpunk.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="cyber-h oxanium-font ac-purple">Check NSA Server Status</h1>
+        <form name="commandForm" onsubmit="return submitCommand()">
+            <input type="radio" id="free" class="cyber-radio ac-purple oxanium-font" name="command" value="free -m">
+            <label for="free">free -m</label><br><br>
+            <input type="radio" id="uptime" class="cyber-radio ac-purple oxanium-font" name="command" value="uptime">
+            <label for="uptime">uptime</label><br><br>
+            <input type="radio" id="iostat" class="cyber-radio ac-purple oxanium-font" name="command" value="iostat">
+            <label for="iostat">iostat</label><br><br>
+            <input type="radio" id="mpstat" class="cyber-radio ac-purple oxanium-font" name="command" value="mpstat">
+            <label for="mpstat">mpstat</label><br><br>
+            <input type="radio" id="netstat" class="cyber-radio ac-purple oxanium-font" name="command" value="netstat">
+            <label for="netstat">netstat</label><br><br>
+            <input type="radio" id="ps" class="cyber-radio ac-purple oxanium-font" name="command" value="ps aux">
+            <label for="ps">ps aux</label><br><br>
+            <button class="cyber-button bg-purple fg-white m-2 vt-bot oxanium-font" type="submit">Check System</button>
+        </form>
+        <br>
+        <div class="code-block" id="response"></div>
+    </div>
+</body>
+</html>

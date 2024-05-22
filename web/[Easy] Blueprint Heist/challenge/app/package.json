@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "graphql-http": "^1.22.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.4",
+    "wkhtmltopdf": "^0.4.0"
+  }
+}

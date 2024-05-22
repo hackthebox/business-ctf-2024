@@ -1,0 +1,34 @@
+.emoji-content {
+    margin: auto;
+    margin-top: 15px;
+    height: 375px;
+    max-width: 800px;
+    background: white;
+    color: #535252;
+    font-size:20px;
+}
+
+.emoji-content:focus {
+    background: white;
+    color: #535252;
+}
+
+li {
+  list-style: none;
+  padding: 0 15px 5px 0;
+  width: auto;
+  display: inline;
+  font-size: 17px;
+}
+
+.bg-secondary {
+  background: rgba(224, 5, 255, 0.39) !important;
+  background-color: #e005ff63 !important;
+}
+
+.resp-msg, #resp-msg {
+  display: none;
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-size: 12px;
+}

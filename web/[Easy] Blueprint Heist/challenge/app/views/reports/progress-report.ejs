@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Progress Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #031c00;
+            color: #8ee28e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .progress {
+            text-align: center;
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+        }
+        .progress-bar {
+            width: 300px;
+            height: 20px;
+            background-color: #384336;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 3px;
+        }
+        .progress-bar-inner {
+            width: 59%;
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 10px;
+            transition: width 0.5s ease-in-out;
+        }
+        .progress-percent {
+            margin-top: 5px;
+        }
+        .details {
+            margin-top: 20px;
+        }
+        .details p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Construction Progress Report</h1>
+        <div class="progress">
+            <div class="progress-bar">
+                <div class="progress-bar-inner"></div>
+            </div>
+            <div class="progress-percent">59% Complete</div>
+        </div>
+        <div class="details">
+            <h2>Details:</h2>
+            <p><strong>Project Name:</strong> Metro Expansion Line 3B</p>
+            <p><strong>Location:</strong> City Center, Capital City</p>
+            <p><strong>Current Phase:</strong> Rock and Soil Layout Analysis for Underground Tunnel Schematics</p>
+            <p><strong>Current Progress:</strong> The analysis of rock and soil layout is 59% complete. Geologists have completed initial assessments of the soil composition and are now conducting detailed surveys of rock formations.</p>
+            <p><strong>Next Steps:</strong> Complete the remaining soil composition assessments and finalize the detailed surveys of rock formations. Begin drafting the underground tunnel schematics based on the analysis results.</p>
+            <p><strong>Expected Completion:</strong> The entire project is scheduled to be completed by Q4 2287.</p>
+        </div>
+    </div>
+</body>
+</html>

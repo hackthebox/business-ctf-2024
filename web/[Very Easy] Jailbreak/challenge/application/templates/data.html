@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIP-OS(R) V1.33.7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/pipboy.app.css">
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+  </head>
+  <body onload="realtimeClock()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inventory">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">DATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/radio">RADIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rom">ROM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#quests" class="nav-link" data-toggle="tab">
+                QUESTS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#workshops" class="nav-link" data-toggle="tab">
+                WORKSHOPS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#stats" class="nav-link" data-toggle="tab">
+                STATS
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="stats" role="tabpanel">
+              <ul class="item-list">
+                <li><a class="data_general" href="#">General</a></li>
+                <li><a class="data_quest" href="#">Quest</a></li>
+                <li><a class="data_combat" href="#">Combat</a></li>
+                <li><a class="data_crafting" href="#">Crafting</a></li>
+                <li><a class="data_crime" href="#">Crime</a></li>
+              </ul>
+
+              <div class="data-stats">
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class1 pull-right">-</div>
+                      <div class="pull-left">Locations Discovered</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class2 pull-right">-</div>
+                      <div class="pull-left">Locations Cleared</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class3 pull-right">-</div>
+                      <div class="pull-left">Days Passed</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class4 pull-right">-</div>
+                      <div class="pull-left">Hours Slept</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class5 pull-right">-</div>
+                      <div class="pull-left">Hours Waiting</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class6 pull-right">-</div>
+                      <div class="pull-left">Caps Found</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class7 pull-right">-</div>
+                      <div class="pull-left">Most Caps Carried</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class8 pull-right">-</div>
+                      <div class="pull-left">Magazines Found</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class9 pull-right">-</div>
+                      <div class="pull-left">Junk Collected</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="data_class10 pull-right">-</div>
+                      <div class="pull-left">Chest Looted</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade show" id="workshops" role="tabpanel">
+              Workshops inside
+            </div>
+
+            <div class="tab-pane fade show" id="quests" role="tabpanel">
+              Quests inside
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <navbar class="navbar-light pip-footer pip-footer-map">
+      <div class="row">
+        <div class="col-3">
+          <div id="my_date"></div>
+        </div>
+        <div class="col-3 text-left">
+          <div class="clock-container">
+            <div id="clock"></div>
+          </div>
+        </div>
+        <div class="col-6 text-right">
+        </div>
+      </div>
+    </navbar>
+
+    <script src="/static/js/jquery-2.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/map.js"></script>
+    <script src="/static/js/data.js"></script>
+  </body>
+</html>

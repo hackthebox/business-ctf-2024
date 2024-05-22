@@ -1,0 +1,20 @@
+{
+	"name": "web_prison_pipeline",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"keywords": [],
+    "author": "rayhan0x01",
+	"license": "ISC",
+	"dependencies": {
+		"express": "4.17.1",
+		"nunjucks": "3.2.4",
+        "prisoner-db": "^1.0.0"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.1"
+	}
+}

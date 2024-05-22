@@ -1,0 +1,28 @@
+prisoner_profile:
+  name: Sarah "Boomer" Thompson
+  age: 38
+  height: "5'7"
+  complexity: Medium
+  marks_tattoos:
+    - "Explosive symbol tattoo on right bicep"
+    - "Burn scars on left hand"
+  eye_color: Green
+  hair_color: Black
+  origin: Dusthaven
+  headshot: "https://example.com/headshots/sarah_thompson.jpg"
+  occupation: Demolition Specialist
+  crime: "Destruction of mutant supply convoy"
+  sentence: "15 years with hard labor"
+  penitentiary_name: Prison-Pipeline
+  prisoner_zone: Beta-2
+  prisoner_cell: B2-08
+  penalties:
+    - "Extended solitary confinement for possession of contraband"
+    - "Manual excavation in dangerous areas"
+  behavior_record:
+    incidents: 7
+    last_incident: "Unauthorized construction of improvised explosives - 2024-02-28"
+    remarks: "Highly skilled in explosives, considered a high-risk prisoner"
+  health_status:
+    physical: "Fit but with untreated injuries"
+    mental: "Defiant and rebellious attitude"

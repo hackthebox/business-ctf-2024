@@ -1,0 +1,19 @@
+{
+  "name": "prisoner-db",
+  "version": "1.0.0",
+  "description": "Database interface for prisoners of Prison-Pipeline.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 1337"
+  },
+  "keywords": [
+    "prison-pipeline",
+    "prisoner-db"
+  ],
+  "author": "hackthebox",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "node-libcurl": "4.0.0"
+  }
+}

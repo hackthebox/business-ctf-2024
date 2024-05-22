@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple cyber-razor-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand oxanium-font color-white" href="/">
+            <img src="/controller/static/img/icon.png" width="30" height="30">
+            OmniWatch
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fg-white blenderpro-font" href="/controller/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fg-white blenderpro-font" href="/controller/firmware">Firmware</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fg-white blenderpro-font" href="/controller/admin">Admin Dashboard</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-item-right">
+            <span class="fg-white"><a class="nav-link-right fg-white blenderpro-font">Welcome back, {{user_data["username"]}} </a> - <a class="nav-link-right fg-white blenderpro-font" href="/controller/logout"> Log-out</a></span>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -ex
+
+cp -r /home/ctf/frontend/* /var/www/html/ && \
+lighttpd -f /etc/lighttpd/lighttpd.conf

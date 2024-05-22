@@ -1,0 +1,27 @@
+{
+    "name": "Brokenswap supported tokens list",
+    "timestamp": "",
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "tokens": [
+        {
+            "chainId": 31337,
+            "address": "0x806C3EE5B00630fEaeB47F51D3F8a15530a5fF98",
+            "name": "HTB token",
+            "symbol": "HTB",
+            "decimals": 18,
+            "logoURI": "/images/htb-token-logo.png"
+        },
+        {
+            "chainId": 31337,
+            "address": "0x01EF005c884631EB146c0B94FaFF0781f8aeD957",
+            "name": "Wrapped Ethereum",
+            "symbol": "WETH",
+            "decimals": 18,
+            "logoURI": "/images/weth-token-logo.png"
+        }
+    ]
+}

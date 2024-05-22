@@ -1,0 +1,12 @@
+{
+  "repository_metadata": {
+    "description": "Index of prisoner records in the Prison Pipeline system",
+    "last_updated": "2024-05-18"
+  },
+  "prisoner_ids": [
+    "PIP-472839",
+    "PIP-839201",
+    "PIP-654321",
+    "PIP-987654"
+  ]
+}

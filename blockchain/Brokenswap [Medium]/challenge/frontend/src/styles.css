@@ -1,0 +1,471 @@
+/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+.react-celo {
+    -moz-tab-size: 4;
+    tab-size: 4;
+  }
+  
+  /**
+  1. Correct the line height in all browsers.
+  2. Prevent adjustments of font size after orientation changes in iOS.
+  */
+  
+  .react-celo {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /*
+  Sections
+  ========
+  */
+  
+  /**
+  Remove the margin in all browsers.
+  */
+  
+  .react-celo {
+    margin: 0;
+  }
+  
+  /**
+  Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+  */
+  
+  .react-celo {
+    font-family: system-ui, -apple-system,
+      /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  }
+  
+  /*
+  Grouping content
+  ================
+  */
+  
+  /**
+  1. Add the correct height in Firefox.
+  2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+  */
+  
+  .react-celo hr {
+    height: 0; /* 1 */
+    color: inherit; /* 2 */
+  }
+  
+  /*
+  Text-level semantics
+  ====================
+  */
+  
+  /**
+  Add the correct font weight in Edge and Safari.
+  */
+  
+  .react-celo b,
+  .react-celo strong {
+    font-weight: bolder;
+  }
+  
+  /**
+  Add the correct font size in all browsers.
+  */
+  
+  .react-celo small {
+    font-size: 80%;
+  }
+  
+  /*
+  Forms
+  =====
+  */
+  
+  /**
+  1. Change the font styles in all browsers.
+  2. Remove the margin in Firefox and Safari.
+  */
+  
+  .react-celo button,
+  .react-celo input,
+  .react-celo optgroup,
+  .react-celo select,
+  .react-celo textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+  Remove the inheritance of text transform in Edge and Firefox.
+  1. Remove the inheritance of text transform in Firefox.
+  */
+  
+  .react-celo button,
+  .react-celo select {
+    /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+  Correct the inability to style clickable types in iOS and Safari.
+  */
+  
+  .react-celo button,
+  .react-celo [type='button'],
+  .react-celo [type='reset'],
+  .react-celo [type='submit'] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+  Remove the inner border and padding in Firefox.
+  */
+  
+  .react-celo ::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+  Restore the focus styles unset by the previous rule.
+  */
+  
+  .react-celo :-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+  Remove the additional ':invalid' styles in Firefox.
+  See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+  */
+  
+  .react-celo :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  
+  /**
+  Add the correct vertical alignment in Chrome and Firefox.
+  */
+  
+  .react-celo progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+  Correct the cursor style of increment and decrement buttons in Safari.
+  */
+  
+  .react-celo ::-webkit-inner-spin-button,
+  .react-celo ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+  1. Correct the odd appearance in Chrome and Safari.
+  2. Correct the outline style in Safari.
+  */
+  
+  .react-celo [type='search'] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+  Remove the inner padding in Chrome and Safari on macOS.
+  */
+  
+  .react-celo ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /*
+  Interactive
+  ===========
+  */
+  
+  /**
+   * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+   * A thin layer on top of normalize.css that provides a starting point more
+   * suitable for web applications.
+   */
+  
+  /**
+   * Removes the default spacing and border for appropriate elements.
+   */
+  
+  .react-celo h1,
+  .react-celo h2,
+  .react-celo h3,
+  .react-celo h4,
+  .react-celo h5,
+  .react-celo h6,
+  .react-celo hr,
+  .react-celo figure,
+  .react-celo p,
+  .react-celo pre {
+    margin: 0;
+  }
+  
+  .react-celo button {
+    background-color: transparent;
+    background-image: none;
+  }
+  
+  /**
+   * Work around a Firefox/IE bug where the transparent `button` background
+   * results in a loss of the default `button` focus styles.
+   */
+  
+  .react-celo button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+  
+  .react-celo *,
+  .react-celo ::before,
+  .react-celo ::after {
+    box-sizing: border-box; /* 1 */
+    border-width: 0; /* 2 */
+    border-style: solid; /* 2 */
+    border-color: #e5e7eb; /* 2 */
+  }
+  
+  /*
+   * Ensure horizontal rules are visible by default
+   */
+  
+  .react-celo hr {
+    border-top-width: 1px;
+  }
+  
+  /**
+   * Undo the `border-style: none` reset that Normalize applies to images so that
+   * our `border-{width}` utilities have the expected effect.
+   *
+   * The Normalize reset is unnecessary for us since we default the border-width
+   * to 0 on all elements.
+   *
+   * https://github.com/tailwindcss/tailwindcss/issues/362
+   */
+  
+  .react-celo img {
+    border-style: solid;
+  }
+  
+  .react-celo textarea {
+    resize: vertical;
+  }
+  
+  .react-celo input::placeholder,
+  .react-celo textarea::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+  }
+  
+  .react-celo button,
+  .react-celo [role='button'] {
+    cursor: pointer;
+  }
+  
+  .react-celo table {
+    border-collapse: collapse;
+  }
+  
+  .react-celo h1,
+  .react-celo h2,
+  .react-celo h3,
+  .react-celo h4,
+  .react-celo h5,
+  .react-celo h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  /**
+   * Reset links to optimize for opt-in styling instead of
+   * opt-out.
+   */
+  
+  .react-celo a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  
+  /**
+   * Reset form element properties that are easy to forget to
+   * style explicitly so you don't inadvertently introduce
+   * styles that deviate from your design system. These styles
+   * supplement a partial reset that is already applied by
+   * normalize.css.
+   */
+  
+  .react-celo button,
+  .react-celo input,
+  .react-celo optgroup,
+  .react-celo select,
+  .react-celo textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+  }
+  
+  .react-celo img,
+  .react-celo video {
+    display: block;
+  
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  /*
+  Scrollbar overrides
+  ===================
+  */
+  
+  .react-celo {
+    --scrollbarBG: rgba(255, 255, 255, 0);
+    --thumbBG: rgb(243, 244, 246);
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  
+  .tw-dark .react-celo,
+  .dark .react-celo {
+    --thumbBG: rgb(55, 65, 81);
+  }
+  .react-celo ::-webkit-scrollbar {
+    width: 4px;
+    background-color: var(--scrollbarBG);
+  }
+  .react-celo ::-webkit-scrollbar-track {
+    background-color: var(--scrollbarBG);
+  }
+  .react-celo ::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  /* phones */
+  @media only screen and (max-width: 767px) {
+    .react-celo ::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  
+  /*
+  Number Input spinner overrides
+  ===============================
+  */
+  /* Chrome, Safari, Edge, Opera */
+  .react-celo input::-webkit-outer-spin-button,
+  .react-celo input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  .react-celo input[type='number'] {
+    -moz-appearance: textfield;
+  }
+  
+  /*
+  Spinner
+  */
+  .react-celo .react-celo-spinner {
+    animation: react-celo-spinner-rotate 2s linear infinite;
+    width: 50px;
+    height: 50px;
+  }
+  .react-celo .react-celo-spinner .react-celo-spinner-path {
+    stroke-linecap: round;
+    animation: react-celo-spinner-dash 1.5s ease-in-out infinite;
+  }
+  
+  .react-celo .justify-center {
+    justify-content: center;
+  }
+  
+  .react-celo .justify-between {
+    justify-content: space-between;
+  }
+  
+  @keyframes react-celo-spinner-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes react-celo-spinner-dash {
+    0% {
+      stroke-dasharray: 1, 150;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -35;
+    }
+    100% {
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: -124;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .react-celo-connect-container {
+      width: 800px;
+      height: 550px;
+    }
+  }
+  
+  @tailwind components;
+  @tailwind utilities;
+  
+  .react-celo-modal-open-body {
+    height: -webkit-fill-available;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 900px) {
+    .react-celo-modal-open-html {
+      height: -webkit-fill-available;
+    }
+    .rc-tray-ios-fix {
+      height: -webkit-fill-available;
+    }
+  }
+  @media (min-width: 900px) {
+    .react-celo-modal-open-body {
+      min-height: 100vh;
+      max-height: 100vh;
+    }
+  }
+  
+  .tw-drop-shadow {
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1))
+      drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06)) !important;
+    filter: var(--tw-drop-shadow);
+  }
+  /* These are use by spinner */
+  
+  * {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+  }
+  

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PIP-OS(R) V1.33.7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/pipboy.app.css">
+    <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light first-navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-SupportedContent" aria-expanded="false" aria-label="Toggle-navigation"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportContent mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">STAT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/inventory">INV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/data">DATA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/map">MAP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/radio">RADIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rom">ROM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#status" class="nav-link" data-toggle="tab">
+                WEAPONS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#special" class="nav-link" data-toggle="tab">
+                APPAREL
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#perks" class="nav-link" data-toggle="tab">
+                AID
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active full" id="status" role="tabpanel">
+              <ul class="item-list">
+                <li><a class="assault_rifle" href="#">Assault Rifle</a></li>
+                <li><a class="combat_shotgun" href="#">Combat Shotgun</a></li>
+                <li><a class="44_pistol" href="#">.44 Pistol</a></li>
+                <li><a class="submachine_gun" href="#">Submachine Gun</a></li>
+                <li><a class="gauss_rifle" href="#">Gauss Rifle</a></li>
+                <li><a class="plasma_gun" href="#">Plasma Gun</a></li>
+                <li><a class="laser_gun" href="#">Laser Gun</a></li>
+                <li><a class="cosmic_cannon" href="#">Cosmic Cannon</a></li>
+                <li><a class="axe" href="#">Grognak's Axe</a></li>
+                <li><a class="grenade" href="#">Fragmentation Grenade</a></li>
+                <li><a class="molotov" href="#">Molotov Cocktail</a></li>
+              </ul>
+
+              <div class="weapon-placeholder">
+                <div class="weapon_div">  </div>
+              </div>
+              
+              <div class="item-stats">
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="damage pull-right">-</div>
+                      <div class="pull-left">Damage</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="fire_rate pull-right">-</div>
+                      <div class="pull-left">Fire Rate</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="range pull-right">-</div>
+                      <div class="pull-left">Range</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="accuracy pull-right">-</div>
+                      <div class="pull-left">Accuracy</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="weight pull-right">-</div>
+                      <div class="pull-left">Weight</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="value pull-right">-</div>
+                      <div class="pull-left">Value</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="tab-pane fade show" id="special" role="tabpanel">
+              Apparel inside
+            </div>
+
+            <div class="tab-pane fade show" id="perks" role="tabpanel">
+              AID inside
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <navbar class="navbar-light pip-footer">
+        <div class="row">
+          <div class="col-3">
+            <div>
+              <span><img src="/static/images/bag.png" class="image-responsive inv-images"></span>
+              <span>245/432</span>
+            </div>
+          </div>
+          <div class="col-3 text-left">
+            <span><img src="/static/images/c_icon.png" class="image-responsive inv-images"></span>
+            <span>1153</span>
+          </div>
+          <div class="col-6 text-right">
+            <span><img src="/static/images/gun.png" class="image-responsive inv-images gun-icon"></span>
+            <span><img src="/static/images/crosshair.png" class="image-responsive inv-images icon-small"></span><span>28</span>
+            <span><img src="/static/images/flash.png" class="image-responsive inv-images icon-small"></span><span>10</span>
+          </div>
+        </div>
+      </navbar>
+
+    <script src="/static/js/jquery-2.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/inv.js"></script>
+  </body>
+</html>

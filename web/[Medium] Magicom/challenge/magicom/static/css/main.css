@@ -1,0 +1,105 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  color: #0aff43;
+  text-align: center;
+  background-color: #152118;
+  margin-top: 50px;
+}
+
+.form-control.no-background {
+  background-color: transparent;
+  border-color: #0aff43;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0;
+  box-shadow: none;
+  color: white;
+}
+
+a.link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0aff43;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+a.link:hover {
+  text-decoration: underline #0aff43;
+}
+
+.btn-hacker {
+ background-color: #0aff43;
+ color: black;
+}
+
+.failed {
+  color: rgb(255, 0, 38)
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%230aff43' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-top-right {
+  margin-top: -20px;
+  background-color: transparent;
+}
+
+.btn-hacker:hover {
+  background-color: black;
+  color: #0aff43; 
+  border-color: #0aff43;
+}
+
+img {
+  width: 970px;
+  height: 560px;
+  padding: 20px;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+img:hover {
+  animation: dance 1.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dance {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.custom-card {
+  background-color: transparent;
+  border: 1px solid #0aff43;
+}
+
+.card-text {
+  font-size: x-small;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #0aff43;
+}
+
+.custom-card img {
+  height: 400px;
+}
+
+input[type=file]::file-selector-button {
+  background-color: #0aff43;
+}
