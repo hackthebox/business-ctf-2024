@@ -1,0 +1,15 @@
+
+        code
+        org $8000
+
+        ldx #$00
+LOOP    lda $4000,x
+        sta $6000,x
+        inx
+        cmp #$20
+        bne LOOP
+
+
+        org $fffc
+        dw $8000
+        dw $ffff

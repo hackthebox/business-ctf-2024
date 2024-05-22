@@ -1,0 +1,24 @@
+AS65 Assembler for R6502 [1.42].  Copyright 1994-2007, Frank A. Kingswood                                                Page    1
+----------------------------------------------------------- solver.a65 -----------------------------------------------------------
+
+15 lines read, no errors in pass 1.
+                        
+                                code
+8000 =                          org $8000
+                        
+8000 : a200                     ldx #$00
+8002 : bd0040           LOOP    lda $4000,x
+8005 : 9d0060                   sta $6000,x
+8008 : e8                       inx
+8009 : c920                     cmp #$20
+800b : d0f5                     bne LOOP
+                        
+                        
+fffc =                          org $fffc
+fffc : 0080                     dw $8000
+fffe : ffff                     dw $ffff
+                        
+No errors in pass 2.
+Wrote binary from address $8000 through $ffff.
+Total size 32768 bytes.
+

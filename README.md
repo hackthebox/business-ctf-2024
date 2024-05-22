@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='../../../assets/banner.png' alt="HTB">
+  <img src='./assets/banner.png' alt="HTB">
 </p>
 
 
