@@ -20,7 +20,7 @@
 
 ## Challenge Write-up 📝
 
-** coming soon :tm: **
+[official_writeup.md](official_writeup.md)
 
 ## Solver
 
